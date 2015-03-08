@@ -537,6 +537,9 @@ typedef union SDL_Event
 
 /* Function prototypes */
 
+//mymod
+extern DECLSPEC int SDLCALL SDL_EventCount(void);
+
 /**
  *  Pumps the event loop, gathering events from the input devices.
  *

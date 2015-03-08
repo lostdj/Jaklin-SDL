@@ -85,6 +85,13 @@ static struct
 
 /* Public functions */
 
+//mymod
+int
+SDL_EventCount(void)
+{
+    return SDL_EventQ.count;
+}
+
 void
 SDL_StopEventLoop(void)
 {

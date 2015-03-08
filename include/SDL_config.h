@@ -43,6 +43,11 @@
 #include "SDL_config_android.h"
 #elif defined(__PSP__)
 #include "SDL_config_psp.h"
+//mymod
+#elif (defined(linux) || defined(__linux) || defined(__linux__))
+#include "SDL_config_tux.h"
+#elif defined(__EMSCRIPTEN__)
+#include "SDL_config_ems.h"
 #else
 /* This is a minimal configuration just to get SDL running on new platforms */
 #include "SDL_config_minimal.h"

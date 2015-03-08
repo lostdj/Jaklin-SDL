@@ -1594,7 +1594,8 @@ SDL_GetWindowData(SDL_Window * window, const char *name)
     }
 
     for (data = window->data; data; data = data->next) {
-        if (data->name && SDL_strcmp(data->name, name) == 0) {
+        if (data->name && (/*mymod*/data->name == name
+                || SDL_strcmp(data->name, name) == 0)) {
             return data->data;
         }
     }
